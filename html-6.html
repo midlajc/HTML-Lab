@@ -1,71 +1,90 @@
 <html>
-  <head>
-    <style>
-      h1 {
-        align-content: center;
-        text-align: center;
-      }
-      form fieldset {
-        margin: 2rem;
-      }
-      fieldset {
-        width: 40%;
-      }
-      .group {
-        margin: 1rem;
-        display: block;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>Student Registration</h1>
-    <form action="">
-      <fieldset>
-        <legend>Basic Detailes</legend>
+
+<head>
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    form fieldset {
+      width: 60rem;
+      margin: 2rem;
+    }
+
+    input {
+      display: block;
+      width: 100%;
+      height: 2rem;
+      margin: 10px 0 10px;
+    }
+
+    input[type=radio],[type=checkbox] {
+      display: initial;
+      width: 13px;
+      height: 13px;
+    }
+    textarea{
+      width: 100%;
+    }
+    select{
+      display: block;
+      margin: 1rem;
+      width: 6rem;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Student Registration</h1>
+  <form action="">
+    <fieldset>
+      <legend>Basic Detailes</legend>
+      <div>
+        <label for="">Name</label>
+        <input type="text" name="" id="" />
+      </div>
+      <div>
+        <label for="">Email</label>
+        <input type="email" name="" id="" />
+      </div>
+      <div>
+        <label for="">Phone No</label>
+        <input type="number" name="" id="" />
+      </div>
+      <div>
+        <label for="">Gender</label>
         <div>
-          <div class="group">
-            <label for="">Name</label>
-            <input type="text" name="" id="" />
-          </div>
-          <div>
-            <label for="">Email</label>
-            <input type="email" name="" id="" />
-          </div>
-          <div>
-            <label for="">Phone No</label>
-            <input type="number" name="" id="" />
-          </div>
-          <div class="group">
-            <label for="">Name</label>
-            <input type="text" name="" id="" />
-          </div>
-          <div>
-            <label for="">Email</label>
-            <input type="email" name="" id="" />
-          </div>
-          <div>
-            <label for="">Phone No</label>
-            <input type="number" name="" id="" />
-          </div>
+          <input type="radio" name="gender" id=""> Male
+          <input type="radio" name="gender" id=""> Female
+          <input type="radio" name="gender" id=""> Not Specified
         </div>
-      </fieldset>
-      <fieldset>
-        <legend>Basic Detailes</legend>
+      </div>
+      <div>
+        <label for="">Address</label>
+        <textarea name="" id="" rows="10"></textarea>
+      </div>
+      <div>
+        <label for="">Qualification</label>
+        <select>
+          <option value="">SSLC</option>
+          <option value="">+2</option>
+          <option value="">Degree</option>
+          <option value="">PG</option>
+        </select>
+      </div>
+      <div>
+        <label for="">Languages Known</label>
         <div>
-          <div>
-            <label for="">Name</label>
-            <input type="text" name="" id="" />
-          </div>
-          <div>
-            <label for="">Email</label>
-            <input type="email" name="" id="" />
-          </div>
-          <div>
-            <label for="">Phone No</label>
-            <input type="number" name="" id="" />
-          </div>
+          <input type="checkbox" name="languages" id="">Malayalam
+          <input type="checkbox" name="languages" id="">English
+          <input type="checkbox" name="languages" id="">Hindi
         </div>
-      </fieldset>
-    </form>
-  </body>
+      </div>
+    </fieldset>
+    <input type="submit" value="Submit">
+  </form>
+</body>
+
 </html>
