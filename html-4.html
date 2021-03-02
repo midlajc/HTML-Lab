@@ -1,44 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        /* .frame {} */
-        
-        body {
-            margin: 0;
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            align-content: center;
-            align-items: center;
-        }
-        
-        .frame img {
-            width: 50rem;
-            height: 29rem;
-        }
-    </style>
+  <title>HTML Frames</title>
 </head>
 
-<body>
-    <div class="frame">
-        <img src="/html4/1.png" alt="">
-    </div>
-    <div class="frame">
-        <img src="/html4/2.jpg" alt="">
-    </div>
-    <div class="frame">
-        <img src="/html4/3.jpg" alt="">
-    </div>
-    <div class="frame">
-        <img src="/html4/4.jpg" alt="">
-    </div>
-</body>
+<frameset cols="*,*,*">
+  <frame name="first" src="/html4/1.html" />
+  <frame name="second" src="/html4/2.html" />
+  <frame name="last" src="/html4/3.html" />
+  <noframes>
+
+    <body>
+      Your browser does not support frames.
+    </body>
+  </noframes>
+</frameset>
 
 </html>
