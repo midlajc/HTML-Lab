@@ -5,10 +5,13 @@
   <title>HTML Frames</title>
 </head>
 
-<frameset cols="*,*,*">
-  <frame name="first" src="html4/1.html" />
-  <frame name="second" src="html4/2.html" />
-  <frame name="last" src="html4/3.html" />
+<frameset cols="*,*">
+  <frame name="first" src="html4/3.html" />
+
+  <frameset rows="*,*">
+    <frame name="second" src="html4/2.html" />
+    <frame name="last" src="html4/1.html" />
+  </frameset>
   <noframes>
 
     <body>
