@@ -1,9 +1,12 @@
 <html>
     <head>
         <style>
+            body{
+                margin: 0;
+            }
             div{
                 width:100%;
-                height: 30vh;
+                height: calc(100vh/3);
             }
             .upper{
                 background: orange;
@@ -11,11 +14,21 @@
             .lower{
                 background: green;
             }
+            .center{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            img{
+                height: 95%;
+            }
         </style>
     </head>
     <body>
         <div class="upper"></div>
-        <div class="center"></div>
+        <div class="center">
+            <img src="html11/ashokachakra.png" alt="">
+        </div>
         <div class="lower"></div>
     </body>
 </html>
